@@ -1,11 +1,11 @@
 {
-    "name": "app_gastro",
-    "short_name": "app_gastro",
+    "name": "Gastronomía",
+    "short_name": "Gastronomía",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Gastronomía ancestral de Quintana Roo.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -4,16 +4,16 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('muestra la pantalla de bienvenida', (tester) async {
-    await tester.pumpWidget(const DelfinesStoreApp());
+    await tester.pumpWidget(const GastronomiaApp());
 
-    expect(find.text('Delfines Store'), findsOneWidget);
+    expect(find.text('Gastronomía'), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsOneWidget);
   });
 
   testWidgets('navega a la pantalla principal después del splash', (
     tester,
   ) async {
-    await tester.pumpWidget(const DelfinesStoreApp());
+    await tester.pumpWidget(const GastronomiaApp());
     await tester.pump(const Duration(seconds: 5));
     await tester.pump();
 
@@ -25,7 +25,7 @@ void main() {
   });
 
   testWidgets('la barra inferior cambia entre las 3 pestañas', (tester) async {
-    await tester.pumpWidget(const DelfinesStoreApp());
+    await tester.pumpWidget(const GastronomiaApp());
     await tester.pump(const Duration(seconds: 5));
     await tester.pump();
 
